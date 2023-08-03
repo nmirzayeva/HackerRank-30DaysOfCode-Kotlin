@@ -1,0 +1,9 @@
+import java.io.*
+import java.util.*
+
+fun main(args: Array<String>) {
+   
+   val a=readLine()
+   if(a!=null) println("Hello, World.\n$a")
+    
+}
