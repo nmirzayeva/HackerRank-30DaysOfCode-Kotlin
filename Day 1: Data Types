@@ -1,0 +1,16 @@
+fun main() {
+
+    var i: Int = 4
+    var d: Double = 4.0
+    var s: String = "HackerRank "
+
+    var i2: Int = readln().toInt()
+    var d2: Double = readln().toDouble()
+    var s2 = readln()
+
+    println(i.plus(i2))
+    println(d.plus(d2))
+    println("$s " + "$s2")
+
+
+}
