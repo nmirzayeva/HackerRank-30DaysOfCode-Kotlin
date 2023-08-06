@@ -1,0 +1,16 @@
+
+
+import kotlin.math.round
+
+
+fun solve(meal_cost: Double, tip_percent: Int, tax_percent: Int): Unit {
+     
+ val total_tip = ((meal_cost * tip_percent) / 100)
+ val total_tax = ((meal_cost * tax_percent) / 100)
+ val total_cost: Double = meal_cost + total_tip + total_tax
+
+    println(round(total_cost).toInt())
+          
+   
+   
+}
