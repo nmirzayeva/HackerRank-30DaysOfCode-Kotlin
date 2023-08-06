@@ -1,0 +1,15 @@
+
+
+fun main(args: Array<String>) {
+
+    val N = readLine()!!.trim().toInt()
+    
+    if(N in 1..100){
+    
+    if(N%2!=0) println("Weird")
+    else if(N%2==0 && N in 2..5 ) println("Not Weird")
+    else if(N%2==0 && N in 6..20 ) println("Weird")
+    else println("Not Weird")
+    
+    }
+}
