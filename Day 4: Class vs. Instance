@@ -1,0 +1,40 @@
+import java.util.*
+
+class Person(initialAge: Int) {
+    private var age = 0
+
+    init {
+        if (initialAge > 0) age = initialAge
+        else println("Age is not valid, setting age to 0.")
+
+    }
+
+    fun amIOld() {
+        if (age < 13) println("You are young.")
+        else if (age >= 1 && age < 18) println("You are a teenager.")
+        else println("You are old.")
+
+    }
+
+    fun yearPasses() {
+        age++
+    }
+
+}
+
+fun main(args: Array<String>) {
+    val sc = Scanner(System.`in`)
+    val T = sc.nextInt()
+    for (i in 0 until T) {
+        val age = sc.nextInt()
+        val p = Person(age)
+        p.amIOld()
+        for (j in 0..2) {
+            p.yearPasses()
+        }
+        p.amIOld()
+        println()
+    }
+    sc.close()
+}
+
