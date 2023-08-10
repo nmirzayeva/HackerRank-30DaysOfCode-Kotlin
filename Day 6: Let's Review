@@ -1,0 +1,42 @@
+
+
+fun main(args: Array<String>) {
+    var sc = Scanner(System.`in`)
+
+    var result = mutableListOf<String>()
+
+
+    var T = sc.nextInt()
+    for (j in 1..T) {
+
+        var s1: String = ""
+        var s2: String = ""
+
+
+        var S = sc.next()
+
+        var mapS = S.map {
+            it
+        }
+
+        for (j in 0..mapS.size - 1) {
+
+            if (j % 2 == 0) {
+
+                s1 += mapS[j]
+
+            } else {
+                s2 += mapS[j]
+            }
+
+
+        }
+
+        result.add("$s1 $s2")
+
+    }
+    for (t in 0..result.size - 1) {
+
+        println(result[t])
+    }
+}
